@@ -1,0 +1,109 @@
+.left-panel {
+    background-color: $left-panel-bg-color;
+    min-height: 5rem;
+    color: $left-panel-font-color;
+    font-weight: $default-font-weight;
+    display: block;
+    position: relative;
+    padding: 0 3rem;
+    width: 100vw;
+    transition: all .8s;
+    &__nav-brand {
+        display: block;
+        height: 5rem;
+        padding: 1rem 0;
+        float: left;
+    }
+    ul {
+        list-style: none;
+        width: 100%;
+        float: left;
+        clear: both;
+    }
+    &__nav-link {
+        &__icon {
+            float: left;
+            margin: 0 2.5rem 0 1.5rem;
+        }
+        &:link,
+        &:visited {
+            display: block;
+            height: 5rem;
+            color: $primary-color;
+            text-transform: uppercase;
+            line-height: 50px;
+        }
+        &:hover,
+        &:active {
+            color: $primary-color-light;
+            text-decoration: none;
+            font-weight: 600;
+        }
+    }
+    &__hamburg-togel-btn {
+        position: absoute;
+        position: absolute;
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+        background-color: $primary-color;
+        box-shadow: 0 .5rem 1rem rgba($black-grey, .8);
+        padding: .5rem;
+        top: .5rem;
+        right: 2rem;
+        cursor: pointer;
+        span {
+            color: white;
+            font-size: 2rem;
+            font-weight: 100;
+            @include centerXY;
+        }
+    }
+    &__togel-btn {
+        display: none;
+    }
+    @include media-breakpoint-down(sm) {
+        float: left;
+        width: 24rem;
+        height: 100vh;
+        &__hamburg-togel-btn {
+            display: none;
+        }
+        &__togel-btn {
+            display: block;
+            position: absolute;
+            height: 4rem;
+            width: 4rem;
+            border-radius: 50%;
+            top: .5rem;
+            right: -2rem;
+            background-color: $primary-color;
+            border: none;
+            outline: none;
+            box-shadow: 0 .5rem 1rem rgba($black-grey, .8);
+            padding: .5rem;
+            cursor: pointer;
+            span {
+                color: white;
+                font-size: 2rem;
+                font-weight: 100;
+                @include centerXY;
+            }
+        }
+    }
+    @include media-breakpoint-down(md) {
+        float: left;
+        width: 250px;
+        height: 100vh;
+    }
+    @include media-breakpoint-down(lg) {
+        float: left;
+        width: 260px;
+        height: 100vh;
+    }
+    @include media-breakpoint-down(xl) {
+        float: left;
+        width: 280px;
+        height: 100vh;
+    }
+}

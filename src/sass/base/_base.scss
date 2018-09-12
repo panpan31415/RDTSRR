@@ -1,0 +1,29 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    /* enfore all elements to inherite box-sizing*/
+}
+
+html {
+    // this defines what 1 rem is 
+    font-size: 62.5%; // 1rem=10px; 1em = 16px;
+    /* this is relative to browser default font-size 16px , so the cacluted font-size is 10px*/
+}
+
+body {
+    box-sizing: border-box;
+    padding: 0;
+}
+span.icon { 
+    font-family: FontAwesome; 
+  }
+
+.App {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: block;
+    padding: 0;
+}

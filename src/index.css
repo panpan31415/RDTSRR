@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+.left-panel {
+  background-color: whitesmoke;
+  min-height: 5rem;
+  color: #0ec457;
+  font-weight: 400;
+  display: block;
+  position: relative;
+  padding: 0 3rem;
+  width: 100vw;
+  transition: all .8s; }
+  .left-panel__nav-brand {
+    display: block;
+    height: 5rem;
+    padding: 1rem 0;
+    float: left; }
+  .left-panel ul {
+    list-style: none;
+    width: 100%;
+    float: left;
+    clear: both; }
+  .left-panel__nav-link__icon {
+    float: left;
+    margin: 0 2.5rem 0 1.5rem; }
+  .left-panel__nav-link:link, .left-panel__nav-link:visited {
+    display: block;
+    height: 5rem;
+    color: #0ead4e;
+    text-transform: uppercase;
+    line-height: 50px; }
+  .left-panel__nav-link:hover, .left-panel__nav-link:active {
+    color: #3AFF6F;
+    text-decoration: none;
+    font-weight: 600; }
+  .left-panel__hamburg-togel-btn {
+    position: absoute;
+    position: absolute;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background-color: #0ead4e;
+    box-shadow: 0 0.5rem 1rem rgba(36, 41, 46, 0.8);
+    padding: .5rem;
+    top: .5rem;
+    right: 2rem;
+    cursor: pointer; }
+    .left-panel__hamburg-togel-btn span {
+      color: white;
+      font-size: 2rem;
+      font-weight: 100;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+  .left-panel__togel-btn {
+    display: none; }
+  @media (min-width: 576px) {
+    .left-panel {
+      float: left;
+      width: 24rem;
+      height: 100vh; }
+      .left-panel__hamburg-togel-btn {
+        display: none; }
+      .left-panel__togel-btn {
+        display: block;
+        position: absolute;
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+        top: .5rem;
+        right: -2rem;
+        background-color: #0ead4e;
+        border: none;
+        outline: none;
+        box-shadow: 0 0.5rem 1rem rgba(36, 41, 46, 0.8);
+        padding: .5rem;
+        cursor: pointer; }
+        .left-panel__togel-btn span {
+          color: white;
+          font-size: 2rem;
+          font-weight: 100;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%); } }
+  @media (min-width: 768px) {
+    .left-panel {
+      float: left;
+      width: 250px;
+      height: 100vh; } }
+  @media (min-width: 992px) {
+    .left-panel {
+      float: left;
+      width: 260px;
+      height: 100vh; } }
+  @media (min-width: 1200px) {
+    .left-panel {
+      float: left;
+      width: 280px;
+      height: 100vh; } }
+
+.right-panel {
+  height: 100vh;
+  display: block;
+  background-color: lightslategray; }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  /* enfore all elements to inherite box-sizing*/ }
+
+html {
+  font-size: 62.5%;
+  /* this is relative to browser default font-size 16px , so the cacluted font-size is 10px*/ }
+
+body {
+  box-sizing: border-box;
+  padding: 0; }
+
+span.icon {
+  font-family: FontAwesome; }
+
+.App {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: block;
+  padding: 0; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 100;
+  color: white; }
