@@ -6,7 +6,7 @@
   font-weight: 400;
   display: block;
   position: relative;
-  padding: 0 3rem;
+  padding: 0 2rem;
   width: 100vw;
   transition: all .8s; }
   .left-panel__nav-brand {
@@ -134,3 +134,29 @@ body {
   font-size: 1.4rem;
   font-weight: 100;
   color: white; }
+
+.left-panel--collapse {
+  transition: all .8s; }
+  @media (min-width: 576px) {
+    .left-panel--collapse {
+      width: 7rem !important; } }
+  @media (min-width: 768px) {
+    .left-panel--collapse {
+      width: 7.5rem !important; } }
+  @media (min-width: 992px) {
+    .left-panel--collapse {
+      width: 8rem !important; } }
+  @media (min-width: 1200px) {
+    .left-panel--collapse {
+      width: 8.5rem !important; } }
+
+.left-panel__nav-text--collapse {
+  transition: all .8s;
+  display: none; }
+
+.left-panel__nav-link__icon--collapse {
+  transition: all .8s;
+  float: left;
+  transform: scale(2);
+  font-weight: 50;
+  margin: 0 1.2rem; }

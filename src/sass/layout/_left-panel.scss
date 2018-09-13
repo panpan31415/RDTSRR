@@ -5,7 +5,7 @@
     font-weight: $default-font-weight;
     display: block;
     position: relative;
-    padding: 0 3rem;
+    padding: 0 2rem;
     width: 100vw;
     transition: all .8s;
     &__nav-brand {
@@ -13,6 +13,7 @@
         height: 5rem;
         padding: 1rem 0;
         float: left;
+        
     }
     ul {
         list-style: none;
