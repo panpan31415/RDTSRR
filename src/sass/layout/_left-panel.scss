@@ -8,6 +8,7 @@
     padding: 0 2rem;
     width: 100vw;
     transition: all .8s;
+    border-bottom:1px solid $primary-color-light;
     &__nav-brand {
         display: block;
         height: 5rem;
@@ -67,6 +68,8 @@
         float: left;
         width: 24rem;
         height: 100vh;
+        border-bottom:none;
+        border-right:1px solid $primary-color-light;
         &__hamburg-togel-btn {
             display: none;
         }

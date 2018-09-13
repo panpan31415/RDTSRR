@@ -28,8 +28,7 @@ class LeftPanel extends React.Component<{}, ILefePanelState>  {
                 linkIconClasses: ["icon", "left-panel__nav-link__icon"],
                 linkTextClasses: ["left-panel__nav-text"]
             },
-            // logoImgUrl:"https://accutics.com/wp-content/uploads/2018/08/accutics-logo.png",
-            logoImgUrl: "/img/accutics-logo-1.png",
+            logoImgUrl: "https://accutics.com/wp-content/uploads/2018/08/accutics-logo.png",
             navLinkStyle: {
                 display: "none"
             }
@@ -47,7 +46,7 @@ class LeftPanel extends React.Component<{}, ILefePanelState>  {
                     handIcon: "\uf0a4",// right-pointed-hand
                     handToggle: false,// collapsed left panel
                     leftPanelClasses: {
-                        leftPanelClasses: ["left-panel","left-panel--collapse"],
+                        leftPanelClasses: ["left-panel", "left-panel--collapse"],
                         linkIconClasses: ["icon", "left-panel__nav-link__icon", "left-panel__nav-link__icon--collapse"],
                         linkTextClasses: ["left-panel__nav-text", "left-panel__nav-text--collapse"]
                     },
