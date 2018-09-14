@@ -44,13 +44,13 @@ class LeftPanel extends React.Component<{}, ILefePanelState>  {
             this.setState((prevState: ILefePanelState) => {
                 return {
                     handIcon: "\uf0a4",// right-pointed-hand
-                    handToggle: false,// collapsed left panel
+                    handToggle: false,// collapsed left panelnpm
                     leftPanelClasses: {
                         leftPanelClasses: ["left-panel", "left-panel--collapse"],
                         linkIconClasses: ["icon", "left-panel__nav-link__icon", "left-panel__nav-link__icon--collapse"],
                         linkTextClasses: ["left-panel__nav-text", "left-panel__nav-text--collapse"]
                     },
-                    logoImgUrl: "/img/accutics-logo-1.png",
+                    logoImgUrl: "img/accutics-logo-1.png",
                 };
             });
         } else if (!this.state.handToggle) {
