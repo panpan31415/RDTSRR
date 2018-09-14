@@ -1,8 +1,10 @@
-.breadcrumb{
-    height:3rem;
+.breadcrumb {
+    height: 3rem;
     line-height: 3rem;
     padding: 0;
-    background-color: #50FF8E;
-    color: $breadCrumb-font-color;
+    font-weight:500;
+    color:$breadCrumb-font-color;
+    border:none;
+    border-radius: none;
     display: block;
 }

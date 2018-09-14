@@ -1,11 +1,13 @@
 import * as React from "react";
+import Card from "./Card";
+const HomePage: React.SFC = () => {
+    return (
 
-const HomePage : React.SFC =()=>{
-    return(
-       
-        <div> this is Home page </div>
-       
-        )
+        <div className="row">
+            <Card /> <Card /> <Card /> <Card />
+        </div>
+
+    )
 }
 
 export default HomePage;

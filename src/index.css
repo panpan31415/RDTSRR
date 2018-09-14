@@ -105,11 +105,11 @@
 .right-panel {
   height: 100vh;
   display: block;
-  color: #0ead4e; }
+  color: #0ead4e;
+  background: white;
+  overflow: hidden; }
 
 .page {
-  margin: 2rem;
-  border: 1px solid red;
   display: block;
   height: 100px; }
 
@@ -179,6 +179,24 @@ body {
   height: 3rem;
   line-height: 3rem;
   padding: 0;
-  background-color: #50FF8E;
-  color: #0F0F0F;
+  font-weight: 500;
+  color: #50FF8E;
+  border: none;
+  border-radius: none;
   display: block; }
+
+.message {
+  border: 1px solid #3AFF6F;
+  height: 5rem;
+  line-height: 5rem;
+  padding: 0 1rem;
+  border-radius: .5rem;
+  background-color: rgba(162, 212, 162, 0.5);
+  color: #0ec457; }
+
+.card {
+  height: 15rem;
+  background-color: orangered;
+  min-width: 15rem;
+  margin: 1rem 0;
+  padding: 1rem; }

@@ -1,12 +1,9 @@
 @import "abstract/variables";
 @import "abstract/mixins";
 
-
-
 @import "layout/left-panel";
 @import "layout/right-panel";
 @import "layout/content-page";
-
 
 @import "base/base";
 @import "base/typography";
@@ -14,3 +11,5 @@
 
 @import "components/header";
 @import "components/breadcrumb";
+@import "components/Message";
+@import "components/card";
