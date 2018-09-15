@@ -21,11 +21,11 @@ const RightPanel: React.SFC = () => {
             <BreadCrumb />
             <div className="page container-fluid">
                 <Message/>
-                <Route path="/" exact={true} component={HomePage} />
-                <Route path="/users" component={UserPage} />
-                <Route path="/posts" component={Postpage} />
-                <Route path="/comments" component={CommentsPage} />
-                <Route path="/albums" component={AlbumsPage} />
+                <Route path="/home" exact={true} component={HomePage} />
+                <Route path="/users" exact={true} component={UserPage} />
+                <Route path="/posts" exact={true} component={Postpage} />
+                <Route path="/comments" exact={true} component={CommentsPage} />
+                <Route path="/albums" exact={true} component={AlbumsPage} />
             </div>
         </div>
     );

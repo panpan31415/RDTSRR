@@ -1,4 +1,5 @@
 {
+  "homepage": "http://panpan.dk/RDTSRR/",
   "name": "accutics",
   "version": "0.1.0",
   "private": true,
@@ -10,7 +11,8 @@
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
     "react-scripts-ts": "2.17.0",
-    "redux": "^4.0.0"
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.3.0"
   },
   "scripts": {
     "start": "react-scripts-ts start",

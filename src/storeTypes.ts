@@ -15,7 +15,7 @@ export interface IStoreAction{
     payload:any
 };
 
-export interface IAppStates{
+export interface IAppStates {
     Albums:AlbumArray,
     Comments: CommentArray,
     Messages: MessageArray,
@@ -23,18 +23,18 @@ export interface IAppStates{
     Users: UserArray
 }
 export interface IAppReducers{
-    LoadAlbumHandler: ()=>{Albums:AlbumArray},
-    LoadCommentHandler: ()=>{Comments: CommentArray},
-    LoadPostDataHandler: ()=>{Posts: PostArray},
-    LoadUserDataHandler: ()=>{Users: UserArray},
-    MessageHandller:()=>{Messages: MessageArray}
+    Albums: ()=>AlbumArray,
+    Comments: ()=>CommentArray,
+    Posts: ()=>PostArray,
+    Users: ()=>UserArray,
+    Messages:()=>MessageArray
 }
 
-export interface IDespatch{
+export interface IActions{
     loadAbbumsData: ()=>void,
     loadCommentsData:  ()=>void,
     loadPostsData:  ()=>void,
     loadUsersData:  ()=>void
 }
 
-export interface IStoreProps extends IAppStates,IAppReducers{};
+export interface IStoreProps extends IActions,IAppReducers {};

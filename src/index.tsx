@@ -1,12 +1,13 @@
-import App from './App';
-
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import * as Redux from 'redux';
 import * as reducers from './reducers';
 
+import * as Redux from 'redux';
+
+import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
+import thunkMiddleware from 'redux-thunk';
 
 import { Provider } from 'react-redux';
 import './index.css';
@@ -14,10 +15,15 @@ import './index.css';
 
 
 
-
-
-const rootReducer = Redux.combineReducers({...reducers});
-const store = Redux.createStore(rootReducer);
+const rootReducer = Redux.combineReducers(
+  {
+    Albums:reducers.LoadAlbumHandler,
+    Comments:reducers.LoadCommentHandler,
+    Messages:reducers.MessageHandller,
+    Posts:reducers.LoadPostDataHandler,
+    Users:reducers.LoadUserDataHandler
+  });
+const store = Redux.createStore(rootReducer,Redux.applyMiddleware(thunkMiddleware));
 
 ReactDOM.render(
   <Provider store={store}>

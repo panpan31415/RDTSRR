@@ -130,7 +130,7 @@ class LeftPanel extends React.Component<{}, ILefePanelState>  {
         return (
             <aside className={this.state.leftPanelClasses.leftPanelClasses.join(" ")}>
                 <nav className="nav">
-                    <Link className="left-panel__nav-brand" to="/"><img src={this.state.logoImgUrl} alt="logo" /></Link>
+                    <Link className="left-panel__nav-brand" to="/home"><img src={this.state.logoImgUrl} alt="logo" /></Link>
                     <ul id="nav-ul" style={this.state.navLinkStyle}>
                         <li>
                             <Link to="/users" className="left-panel__nav-link" >

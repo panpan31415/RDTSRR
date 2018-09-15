@@ -1,7 +1,6 @@
-// import * as actions from './Actions';
+ import * as actions from './Actions';
 
 import * as React from 'react';
-
 // import * as Redux from 'redux';
 
 import LeftPanel from './components/LeftPanel';
@@ -9,51 +8,50 @@ import RightPanel from './components/RightPanel';
 
 import { BrowserRouter } from 'react-router-dom';
 
-// import { connect } from 'react-redux';
-// import {
-//   IAppReducers,
-//   IAppStates,
-//   IDespatch,
-//   IStoreProps
-//   } from './storeTypes';
+import { connect } from 'react-redux';
+import {
+// IActions,
+ // IAppReducers,
+ // IAppStates,
+  IStoreProps
+  } from './storeTypes';
 
 
 
 
 
 
-// const mapStateToProps = (state: IAppReducers): IAppStates => {
+const mapStateToProps = (state:any): any => {
 
-//   return {
-//     Albums: state.LoadAlbumHandler().Albums,
-//     Comments: state.LoadCommentHandler().Comments,
-//     Messages: state.MessageHandller().Messages,
-//     Posts: state.LoadPostDataHandler().Posts,
-//     Users: state.LoadUserDataHandler().Users
-//   }
-// };
-// const mapDispatchToProps = (dispatch: Redux.Dispatch<any>): IDespatch => {
-//   return {
-//     loadAbbumsData: dispatch(actions.loadUsersData),
-//     loadCommentsData: dispatch(actions.loadCommentsData),
-//     loadPostsData: dispatch(actions.loadPostsData),
-//     loadUsersData: dispatch(actions.loadUsersData)
-//   };
-// }
+  return {
+    Albums: state.Albums,
+    Comments: state.Comments,
+    Messages: state.Messages,
+    Posts: state.Posts,
+    Users: state.Users
+  }
+};
+const mapDispatchToProps = (dispatch: any): any => {
+  return {
+    loadAbbumsData: ()=>dispatch(actions.loadUsersData()),
+    loadCommentsData:  ()=>dispatch(actions.loadCommentsData()),
+    loadPostsData:  ()=>dispatch(actions.loadPostsData()),
+    loadUsersData:  ()=>dispatch(actions.loadUsersData())
+  };
+}
 
 
-// class App extends React.Component<any,IStoreProps> {
+class App extends React.Component<any,any> {
 
-class App extends React.Component {
-  // constructor(props) {
-  //   super(props);
-  // }
-  // public componentDidMount() {
-  //   this.props.LoadUserDataHandler();
-  //   this.props.LoadPostDataHandler();
-  //   this.props.LoadCommentHandler();
-  //   this.props.LoadAlbumHandler();
-  // }
+  constructor(props:IStoreProps) {
+    super(props);
+  }
+  public componentDidMount() {
+    this.props.loadAbbumsData();
+    this.props.loadCommentsData();
+    this.props.loadPostsData();
+    this.props.loadUsersData();
+  }
   public render() {
     return (
       <BrowserRouter>
@@ -65,5 +63,5 @@ class App extends React.Component {
     );
   }
 }
-export default App;
-// export default connect<IAppStates,{}>(mapStateToProps, mapDispatchToProps)(App);
+export default  connect<any>(mapStateToProps, mapDispatchToProps)(App);
+
