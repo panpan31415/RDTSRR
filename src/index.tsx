@@ -5,11 +5,14 @@ import * as reducers from './reducers';
 import * as Redux from 'redux';
 
 import App from './App';
+
+
 import registerServiceWorker from './registerServiceWorker';
 
 import thunkMiddleware from 'redux-thunk';
 
 import { Provider } from 'react-redux';
+
 import './index.css';
 
 

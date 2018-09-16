@@ -17,7 +17,7 @@ import {
     REQUEST_DATA_USERS_SUCCESS
     } from './constants';
 
-export const loadCommentsData = () => (dispatch: ({ }) => void) => {
+export const loadCommentsData = (dispatch: ({ }) => void) => {
     dispatch({ type: REQUEST_DATA_COMMENTS_PENDING });
     fetch(GET_ALL__COMMENTS_API)
         .then(response => response.json())
@@ -32,7 +32,7 @@ export const loadCommentsData = () => (dispatch: ({ }) => void) => {
         }));
 }
 
-export const loadPostsData = () => (dispatch: ({ }) => void) => {
+export const loadPostsData =  (dispatch: ({ }) => void) => {
     dispatch({ type: REQUEST_DATA_POSTS_PENDING });
     fetch(GET_ALL_POST_API)
         .then(response => response.json())
@@ -46,7 +46,7 @@ export const loadPostsData = () => (dispatch: ({ }) => void) => {
         }));
 }
 
-export const loadUsersData = () => (dispatch: ({ }) => void) => {
+export const loadUsersData =  (dispatch: ({ }) => void) => {
     dispatch({ type: REQUEST_DATA_USERS_PENDING });
     fetch(GET_ALL_USER_API)
         .then(response => response.json())
@@ -60,7 +60,7 @@ export const loadUsersData = () => (dispatch: ({ }) => void) => {
         }));
 }
 
-export const loadAbbumsData = () => (dispatch: ({ }) => void) => {
+export const loadAbbumsData =  (dispatch: ({ }) => void) => {
     dispatch({ type: REQUEST_DATA_ALBUMS_PENDING });
     fetch(GET_ALL_ALBUMS_API)
         .then(response => response.json())
